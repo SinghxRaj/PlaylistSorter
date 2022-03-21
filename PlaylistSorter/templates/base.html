@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../static/css/base.css">
+  {% block stylesheet %}
+
+  {% endblock %}
+  <title>
+    {% block title %}
+
+    {% endblock %}
+  </title>
+</head>
+<body>
+  <header>
+    <img src="../static/spotify-icon.png" id="spotify-icon">
+    <h1>Spotify Sorter</h1>
+  </header>
+  <main>
+    {% block content %}
+
+    {% endblock %}
+  </main>
+  <footer>
+    <p id="footer-content">Made in 2022 by Rajvir Singh.</p>
+  </footer>
+</body>
+</html>
