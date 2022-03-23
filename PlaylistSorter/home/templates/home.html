@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block stylesheet %}
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../static/css/home.css">
+{% endblock %}
+
+{% block title %}
+  Spotify Sorter - Home Page
+{% endblock %}
+
+{% block content %}
+  <section id="content">
+    <h2>Welcome to Spotify Sorter</h2>
+    <p>
+      This application will sort any of your current spotify playlists any of the following attributes:
+    </p>
+
+    <ul>
+      <li>Alphabetical</li>
+      <li>Most Played Songs</li>
+      <li>Name of Artist</li>
+      <li>Name of the Song</li>
+      <li>Release Date</li>
+    </ul>
+
+    <p>
+      All you have to do to is click on the green 'Start' button
+      and your on your way.
+    </p>
+    <a class = "button" href="{{ url_for('home.home_page') }}">Start</a>
+  </section>
+{% endblock %}

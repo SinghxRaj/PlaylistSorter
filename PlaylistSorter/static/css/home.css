@@ -1,0 +1,54 @@
+h2, p {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+p {
+  font-size: 18px;
+}
+
+ul {
+  display: table;
+  margin: 0 auto;
+}
+
+li {
+  font-size: 18px;
+  list-style-type: circle;
+}
+
+#content {
+  background-color: #4B4B4C;
+  border-radius: 10px;
+  margin: auto;
+  width: 50%;
+  padding: 5px 8px 30px 8px;
+}
+
+.button {
+  margin: 0 auto;
+  display: block;
+  border: none;
+  width: 60px;
+  height: 25px;
+  font-family: 'Lato', sans-serif;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px 40px;
+  font-size: 20px;
+  color: #28282B;
+  background-color: #1DB954;
+  border: 3px solid transparent;
+  border-radius: 6px;
+}
+
+.button:hover {
+  color: #FAF9F6;
+  border: 3px solid #1DB954;
+  background-color: #28282B;
+  transition-duration: 0.4s;
+}

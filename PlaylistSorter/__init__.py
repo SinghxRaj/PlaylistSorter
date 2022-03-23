@@ -1,7 +1,14 @@
 from flask import Flask
+from PlaylistSorter.config import Config
 
 def create_app():
   app = Flask(__name__)
-  app.config['SECRET_KEY'] = '5b40cce1306229212c00b3c7eee4f2c68189d8f5f8116bea'
-  # Config the blue prints for the app or import the modules
+  app.config.from_object(Config)
+  from PlaylistSorter.home.routes import home_blueprint
+  # from PlaylistSorter.auth.routes import auth_blueprint
+  # from PlaylistSorter.selection.routes import selection_blueprint
+  # from PlaylistSorter.sort.routes import sort_blueprint
+  # from PlaylistSorter.result.routes import result_blueprint
+
+  app.register_blueprint(home_blueprint)
   return app

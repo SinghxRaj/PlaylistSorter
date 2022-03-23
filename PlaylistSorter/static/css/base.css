@@ -15,6 +15,10 @@ header {
   align-items: center;
 }
 
+main {
+  padding-top: 100px;
+}
+
 footer {
   background-color: #343434;
   width: 100%;
@@ -30,6 +34,12 @@ footer {
 
 #footer-content {
   text-align: center;
-  padding-top: 15px;
   font-size: 16px;
+}
+
+.flex-wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
 }
