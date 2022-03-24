@@ -1,3 +1,12 @@
+/*
+ * The base.css file provides the styling for the base.html file. The styling
+ * of the base.html file is a matte black background which fits with the
+ * overall theme of the Spotify brand which is black and green. The header has
+ * the same colors as the background and is centered at the top of the page. The footer
+ * is a slighly lighter grey so that it can be differentiated from the rest of the site and is centered at the bottom of the page.
+ * The font that will be used by default is the 'Lato' font from google fonts.
+ */
+
 body {
   background-color: #28282B;
   color: #FAF9F6;
@@ -28,8 +37,7 @@ footer {
 
 #spotify-icon {
   height: 50px;
-  width: 50px;
-  margin-right: 20px;
+  width: 90px;
 }
 
 #footer-content {

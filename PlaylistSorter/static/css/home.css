@@ -1,3 +1,11 @@
+/**
+* The home.css file is a stylesheet for the home.html file.
+* It provides a lighter background for the content.
+* All the content is centered and uses Montserrat font which
+* complements the default font, lato, very well. It styles the button
+* green and black which follow the spotify brand.
+*/
+
 h2, p {
   font-family: 'Montserrat', sans-serif;
   text-align: center;

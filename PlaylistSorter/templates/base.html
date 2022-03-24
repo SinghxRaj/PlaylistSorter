@@ -1,3 +1,15 @@
+<!--
+  The base.html file is inherited by all other templates since it
+  provides the markup that will be in every template file in the application.
+
+  In the base.html file, there is a header which says the name of the application and a footer
+  which says when the application was created along with who created it. Additionally,
+  there are three blocks which allow for dynamic content, stylesheet block, title block, and
+  a content block. The stylesheet block is used to add extra stylesheets and links such as fonts.
+  The title block is used for providing the title of the page (this will be different for each page).
+  The content block is used for providing the main content for the page.
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +29,7 @@
 </head>
 <body>
   <header>
-    <img src="../static/spotify-icon.png" id="spotify-icon">
+    <img id="spotify-icon" src="../static/spotify-icon.png" alt="The spotify icon.">
     <h1>Spotify Sorter</h1>
   </header>
   <div class="flex-wrapper">
