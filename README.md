@@ -5,3 +5,4 @@ Made using the following:
 Flask (python)
 HTML
 CSS
+Spotipy/Spotify API
