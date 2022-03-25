@@ -1,15 +1,18 @@
-from flask import render_template, redirect, url_for, Blueprint
+from flask import render_template, session, redirect, request, url_for, Blueprint
 import spotipy
 from PlaylistSorter.auth.util import get_token
 
 selection_blueprint = Blueprint('selection', __name__, template_folder='templates')
 
-@selection_blueprint.route('/selection')
+@selection_blueprint.route('/selection', methods=["GET", "POST"])
 def selection_page():
   """
   Retrieves of the user's playlists and renders them
   on the selection page
   """
+  if request.method =="POST":
+    session['selected_playlist_id'] = request.form['selected_playlist']
+    return redirect(url_for("sort.sort_page"))
   try:
     token_info = get_token()
   except Exception:
@@ -29,7 +32,6 @@ def selection_page():
       curr['id'] = curr_playlist['id']
       curr['name'] = curr_playlist['name']
       curr['image'] = curr_playlist['images'][0]
-      curr['tracks'] = curr_playlist['tracks']
       playlists_info['all_playlists'].append(curr)
     iter += 1
     if not curr_playlists_chunk['next']:

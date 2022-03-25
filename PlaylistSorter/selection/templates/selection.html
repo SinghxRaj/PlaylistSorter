@@ -9,10 +9,35 @@
   <link rel="stylesheet" href="../static/css/selection.css">
 {% endblock %}
 
+{% block script %}
+  <script src="../static/js/selection.js" defer></script>
+{% endblock %}
+
 {% block title %}
   Spotify Sorter - Selection Page
 {% endblock %}
 
 {% block content %}
-  {{ playlists_info }}
+  {% set display_name = playlists_info['display_name'] %}
+  <h2>These are all playlists from <span id="display_name">{{ display_name }}</span>.</h2>
+  <p>
+    Select the playlist that you would like to sort. Then submit button
+    to continue to the sort.
+  </p>
+  <ul>
+    {% for playlist in playlists_info['all_playlists'] %}
+      {% set id = playlist['id'] %}
+      {% set name = playlist['name'] %}
+      {% set image_url = playlist['image']['url'] %}
+      <li class="playlist-card" id="{{ id }}">
+        <img src="{{ image_url }}" alt="Playlist cover image">
+        <p>{{ name }}</p>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <form action="{{ url_for('selection.selection_page') }}" method="POST">
+    <input type="hidden" id="selected-playlist" name="selected_playlist" required>
+    <input id="next-btn" class="button button-disabled" type="submit" value="Next" disabled>
+  </form>
 {% endblock%}
