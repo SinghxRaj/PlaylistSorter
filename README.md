@@ -51,7 +51,8 @@ This application sorts user's Spotify playlist based on any of the following att
 7. Save settings and copy the ``Client ID`` and ``Client Secret`` which are needed to   set the environment variables.
 
 ### Setting Environment Variables (Part 3)
-1. Set the following environment variables in the terminal.
+1. Set the following environment variables in the terminal.  
+
 ``set SPOTIFY_CLIENT_ID=<client_id>``  
 
 ``set SPOTIFY_CLIENT_SECRET=<client_secret>``  
