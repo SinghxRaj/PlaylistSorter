@@ -1,8 +1,8 @@
 ## Table of Contents
-[About](#about-the-project)
-[Tools](#tools-used)
-[Getting Start](#getting-started-on-windows)
-[License](#license)
+[About](#about-the-project)  
+[Tools](#tools-used)  
+[Getting Start](#getting-started-on-windows)  
+[License](#license)  
 
 # About The Project
 ## Spotify Sorter
