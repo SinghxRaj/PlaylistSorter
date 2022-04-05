@@ -13,7 +13,7 @@ This application sorts user's Spotify playlist based on any of the following att
 * Popularity  
 
 
-[Click to visit deployed version](https://playlistsorter.herokuapp.com/)
+[Visit Deployed Version](https://playlistsorter.herokuapp.com/)
 
 # Tools Used
 * [Flask (python)](https://flask.palletsprojects.com/en/2.1.x/)
@@ -53,7 +53,9 @@ This application sorts user's Spotify playlist based on any of the following att
 ### Setting Environment Variables (Part 3)
 1. Set the following environment variables in the terminal.
 ``set SPOTIFY_CLIENT_ID=<client_id>``  
+
 ``set SPOTIFY_CLIENT_SECRET=<client_secret>``  
+
 ``set SECRET_KEY=<any_string>``  
 
 ### Run Application (Final Part)
