@@ -1,7 +1,7 @@
 ## Table of Contents
 [About](#about-the-project)  
-[Tools](#tools-used)  
-[Getting Start](#getting-started-on-windows)  
+[Tools Used](#tools-used)  
+[Getting Started](#getting-started-on-windows)  
 [License](#license)  
 
 # About The Project
