@@ -35,8 +35,7 @@ def owner_sort_page():
     else:
       replace_playlist(token_info, playlist_id, sorted_tracks_id)
       session["new_playlist_id"] = playlist_id
-    return redirect(url_for("home.home_page"))
-    # return redirect(url_for("result.result_page"))
+    return redirect(url_for("result.result_page"))
 
 @sort_blueprint.route('/not-owner-sort', methods=["GET", "POST"])
 def not_owner_sort_page():
@@ -63,5 +62,4 @@ def not_owner_sort_page():
     playlist_name = request.form.get("playlist-name", None)
     new_playlist_id = create_new_playlist(token_info, playlist_name, sorted_tracks_id)
     session["new_playlist_id"] = new_playlist_id
-    return redirect(url_for("home.home_page"))
-    # return redirect(url_for("result.result_page"))
+    return redirect(url_for("result.result_page"))
