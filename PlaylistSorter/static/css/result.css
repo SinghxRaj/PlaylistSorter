@@ -1,0 +1,56 @@
+/*
+  This is the style sheet used for result.html. The styling is
+  consistent with the other pages and in line with the colors
+  used by Spotify. The colors used were dark grey and green.
+*/
+h2, p {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+h2 {
+  font-size: 25px;
+  color: #1DB954;
+}
+
+p {
+  font-size: 18px;
+}
+
+#main-desc {
+  margin: 40px auto;
+  width: 600px;
+}
+
+#btn-desc {
+  margin: 50px auto 10px auto;
+  width: 350px;
+}
+
+.highlight {
+  color: #1DB954;
+}
+
+.button {
+  margin: 0 auto;
+  display: block;
+  border: none;
+  width: 150px;
+  height: 40px;
+  font-family: 'Lato', sans-serif;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px 40px;
+  font-size: 20px;
+  color: #28282B;
+  background-color: #1DB954;
+  border: 3px solid transparent;
+  border-radius: 6px;
+}
+
+.button:hover {
+  color: #FAF9F6;
+  border: 3px solid #1DB954;
+  background-color: #28282B;
+  transition-duration: 0.4s;
+}

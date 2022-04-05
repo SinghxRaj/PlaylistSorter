@@ -1,0 +1,23 @@
+<!--
+  result.html is the template for the result page. It let's the user know that
+  the playlist was sorted and gives them the option to return to the home page.
+-->
+{% extends "base.html" %}
+
+{% block stylesheet %}
+  <link rel="stylesheet" href="../static/css/result.css">
+{% endblock %}
+
+{% block title %}
+  Spotify Sorter- Result Page
+{% endblock %}
+
+{% block content %}
+  <h2>Completed!</h2>
+  <p id="main-desc">
+    Your Spotify playlist has been sorted. You should be able to find it
+    in the playlists section of your Spotify account.
+  </p>
+  <p id="btn-desc">If you would like to sort another playlist. <span class="highlight">Click the button below.</span></p>
+  <a class = "button" href="{{ url_for('home.home_page') }}">Back To Home Page</a>
+{% endblock %}
