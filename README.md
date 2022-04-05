@@ -11,6 +11,8 @@ This application sorts user's Spotify playlist based on any of the following att
 * Name of the Artist
 * Duration of the Song
 * Popularity  
+
+
 [Click to visit deployed version](https://playlistsorter.herokuapp.com/)
 
 # Tools Used
