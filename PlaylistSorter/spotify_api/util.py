@@ -107,7 +107,7 @@ def get_track_items_data(token_info, playlist_id) -> list:
   return tracks
 
 
-def isOwner(token_info, playlist_id):
+def isOwner(token_info, playlist_id) -> bool:
   """
   Determines whether the current user is the owner of
   the playlist
