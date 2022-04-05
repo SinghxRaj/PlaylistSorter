@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block stylesheet %}
+  <link rel="stylesheet" href="../../static/css/error.css">
+{% endblock %}
+{% block title %}
+  Error
+{% endblock %}
+
+{% block content %}
+  <h2>Error</h2>
+  <p>Click the button to go to Home Page</p>
+  <a class = "button" href="{{ url_for('home.home_page') }}">Go To Home Page</a>
+{% endblock %}

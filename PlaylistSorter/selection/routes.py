@@ -13,7 +13,7 @@ def selection_page():
   try:
     token_info = get_token()
   except Exception:
-    return redirect(url_for('home.home_page'))
+    return redirect(url_for('error.error_page'))
   if request.method == "POST":
     session['selected_playlist_id'] = request.form.get('selected_playlist', None)
     if(isOwner(token_info, session.get('selected_playlist_id', None))):

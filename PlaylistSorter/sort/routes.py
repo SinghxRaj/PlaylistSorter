@@ -17,10 +17,10 @@ def owner_sort_page():
   try:
     token_info = get_token()
   except:
-    return redirect(url_for('home.home_page'))
+    return redirect(url_for('error.error_page'))
   playlist_id = session.get("selected_playlist_id", None)
   if playlist_id is None:
-    return redirect(url_for("home.home_page"))
+    return redirect(url_for("error.error_page"))
   if request.method == "GET":
     playlist = get_playlist_display_data(token_info, playlist_id)
     return render_template("owner_sort.html", playlist=playlist)
@@ -48,10 +48,10 @@ def not_owner_sort_page():
   try:
     token_info = get_token()
   except:
-    return redirect(url_for('home.home_page'))
+    return redirect(url_for('error.error_page'))
   playlist_id = session.get("selected_playlist_id", None)
   if playlist_id is None:
-    return redirect(url_for("home.home_page"))
+    return redirect(url_for("error.error_page"))
   if request.method == "GET":
     playlist = get_playlist_display_data(token_info, playlist_id)
     return render_template("not_owner_sort.html", playlist=playlist)
