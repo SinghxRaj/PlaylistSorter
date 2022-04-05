@@ -52,9 +52,9 @@ This application sorts user's Spotify playlist based on any of the following att
 
 ### Setting Environment Variables (Part 3)
 1. Set the following environment variables in the terminal.
-``set SPOTIFY_CLIENT_ID=<client_id>``
-``set SPOTIFY_CLIENT_SECRET=<client_secret>``
-``set SECRET_KEY=<any_string>``
+``set SPOTIFY_CLIENT_ID=<client_id>``  
+``set SPOTIFY_CLIENT_SECRET=<client_secret>``  
+``set SECRET_KEY=<any_string>``  
 
 ### Run Application (Final Part)
 1. To run the application.
