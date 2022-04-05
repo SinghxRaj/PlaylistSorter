@@ -30,7 +30,7 @@ def get_token() -> dict:
   if not token_info:
     raise "exception"
   spotify_oauth = create_spotify_oauth()
-  token_info = session['token_info']
+  token_info = session.get('token_info')
   if(spotify_oauth.is_token_expired(token_info)):
     token_info = spotify_oauth.refresh_access_token(token_info['refresh_token'])
     session['token_info'] = token_info

@@ -1,0 +1,177 @@
+h2, p {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+p {
+  font-size: 18px;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 0px;
+}
+
+form {
+  margin: 30px auto;
+  width: 60%;
+}
+
+form label, form select {
+  display: block;
+}
+
+form label {
+  text-align: center;
+  font-size: 18px;
+}
+
+form select {
+  margin: 20px auto;
+  width: 350px;
+  height: 40px;
+  font-size: 15px;
+  background-color: #4B4B4C;
+  color: #FAF9F6;
+}
+
+form select option {
+  text-align: center;
+}
+
+form input {
+  width: 350px;
+  display: block;
+  margin: 20px auto;
+  background-color: #4B4B4C;
+  color: #FAF9F6;
+  height: 40px;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  outline: none;
+  border: none;
+}
+
+#description {
+    width: 700px;
+    margin: 20px auto;
+}
+
+#spotify-container {
+  width: 60%;
+  margin: auto;
+  border-radius: 5px;
+  background-color: #C0C0C0;
+  padding: 20px 5px;
+}
+
+#track-container {
+  padding: 0px;
+  border: 1px solid #28282B;
+  width: 85%;
+  margin: auto;
+}
+
+.playlist-name {
+  color: #1DB954;
+}
+
+.playlist-card {
+  display: flex;
+  align-items: center;
+  background-color: #4B4B4C;
+  border: 1px solid #28282B;
+  border-radius: 10px;
+  width: 90%;
+  height: 100px;
+  margin: 5px auto 0px auto;
+  cursor: pointer;
+}
+
+.playlist-card > img {
+  max-width: 98px;
+  vertical-align: middle;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.playlist-card > p {
+  margin: auto;
+}
+
+.track-card {
+  display: flex;
+  align-items: center;
+  background-color: #1DB954;
+  width: 100%;
+  height: 60px;
+  margin: 0px auto;
+  padding: 0px;
+  text-decoration: none;
+  border-bottom: 1px solid #28282B;
+}
+
+.track-card > img {
+  max-width: 60px;
+  vertical-align: middle;
+}
+
+.track-description {
+  color: black;
+  margin: 0px auto;
+}
+
+.track-description p {
+  font-size: 15px;
+}
+
+.description-info {
+  font-weight: bold;
+}
+
+.button {
+  margin: 0 auto;
+  display: block;
+  border: none;
+  width: 150px;
+  height: 60px;
+  font-family: 'Lato', sans-serif;
+  text-decoration: none;
+  background-color: #1DB954;
+  text-align: center;
+  padding: 10px 40px;
+  font-size: 22px;
+  color: #28282B;
+  border: 3px solid transparent;
+  border-radius: 6px;
+}
+
+.button-disabled {
+  background-color: #4B4B4C;
+}
+
+.button-enabled {
+  background-color: #1DB954;
+}
+
+.button-enabled:hover {
+  color: #FAF9F6;
+  border: 3px solid #1DB954;
+  background-color: #28282B;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+
+.hidden {
+    display: none;
+}
+
+.expand {
+  background-color: #28282B;
+}

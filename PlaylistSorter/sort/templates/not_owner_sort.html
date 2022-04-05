@@ -1,0 +1,30 @@
+<!--
+  not_owner_sort.html extends from the sort.html template. It contains
+  a form for selecting the type of attribute the tracks will be sorted on and
+  an input field for the name of the name of the playlist.
+-->
+
+{% extends "sort.html" %}
+
+{% block form %}
+  <form action="{{ url_for('sort.not_owner_sort_page') }}" method="POST">
+    <label for="sort">Choose how you will sort the playlist:</label>
+    <select id="sort" name="sort">
+      <option value="Name of Song (Alphabetical)">Name of Song (Alphabetical)</option>
+      <option value="Name of Song (Reverse Alphabetical)">Name of Song (Reverse Alphabetical)</option>
+      <option value="Name of Artist (Alphabetical)">Name of Aritst (Alphabetical)</option>
+      <option value="Name of Artist (Reverse Alphabetical)">Name of Artist (Reverse Alphabetical)</option>
+      <option value="Release Date (Newest to Oldest)">Release Date (Newest to Oldest)</option>
+      <option value="Release Date (Oldest to Newest)">Release Date (Oldest to Newest)</option>
+      <option value="Song Duration (Shortest to Longest)">Song Duration (Shortest to Longest)</option>
+      <option value="Song Duration (Longest to Shortest)">Song Duration (Longest to Shortest)</option>
+      <option value="Popularity (Most to Least)">Popularity (Most to Least)</option>
+      <option value="Popularity (Least to Most)">Popularity (Least to Most)</option>
+    </select>
+    <div id="new-playlist-container">
+      <label for="playlist-name">Name of new playlist</label>
+      <input type="text" name="playlist-name" id="playlist-name" placeholder="Enter Playlist Name">
+    </div>
+    <input id="next-btn" class="button" type="submit" value="Next">
+  </form>
+{% endblock %}

@@ -1,0 +1,54 @@
+<!--
+  sort.html extends from base.html template. This page contains the description for the page.
+  Furthermore, displays playlist that is selected for sorting along with the tracks for the playlist.
+  It contains a block placeholder where a form can be added.
+-->
+{% extends "base.html" %}
+
+{% block stylesheet %}
+  <link rel="stylesheet" href="../../static/css/sort.css">
+{% endblock %}
+
+{% block script %}
+  <script src="../../static/js/sort.js" defer></script>
+  {% block addition_script %}
+
+  {% endblock %}
+{% endblock %}
+
+{% block title %}
+  Spotify Sorter - Sort Page
+{% endblock %}
+
+{% block content %}
+  {% set playlist_display_name = playlist["display_name"] %}
+  {% set playlist_image_url = playlist["cover_image_url"] %}
+  {% set playlist_tracks = playlist["tracks"] %}
+  <h2>Playlist that will be sorted: <span class="playlist-name">{{ playlist_display_name }}</span></h2>
+  <p id="description">
+    Fill out the form with how you would like to sort the playlist. You can
+    see the tracks for the playlist in their current order by clicking on the
+    playlist card. This is help with figuring out which way you would like to sort your
+    tracks.
+  </p>
+  <div id="spotify-container">
+    <div id="playlist-container" class="playlist-card">
+      <img src="{{ playlist_image_url }}" alt="Playlist cover image">
+      <p>{{ playlist_display_name }}</p>
+    </div>
+    <ul id="track-container" class="hidden">
+      {% for track in playlist_tracks %}
+        <li class="track-card">
+          <img src="{{ track['cover_image_url'] }}">
+          <div class="track-description">
+            <p>Song Name: <span class="description-info">{{ track["name"] }}</span></p>
+            <p>By: <span class="description-info">{{ track["artists"] }}</span></p>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% block form %}
+
+  {% endblock %}
+{% endblock %}
