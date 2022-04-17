@@ -17,9 +17,11 @@ This application sorts user's Spotify playlist based on any of the following att
 
 # Tools Used
 * [Flask (python)](https://flask.palletsprojects.com/en/2.1.x/)
+* JavaScript
 * HTML
 * CSS
 * [Spotipy/Spotify API](https://spotipy.readthedocs.io/en/2.19.0/)
+* [Heroku](https://www.heroku.com/)
 
 # Getting Started On Windows
 ### Creating Repo and Installing Dependencies (Part 1)
